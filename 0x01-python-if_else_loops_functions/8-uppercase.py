@@ -4,5 +4,5 @@ def uppercase(str):
         m = chr(ord(i) - 32)
         if i == ' ':
             m = i
-        print(m, end="")
+        print("{0}".format(m), end="")
     print()
