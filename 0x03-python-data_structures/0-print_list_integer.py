@@ -4,3 +4,4 @@ if __name__ == "__main__":
         i = 0
         while i < len(my_list):
             print("{}".format(my_list[i]))
+            i += 1
