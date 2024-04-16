@@ -10,4 +10,6 @@ class MyList(list):
     """ print sorted """
 
     def print_sorted(self):
-        print(sorted(self))
+        list = sorted(self)
+        if list != []:
+            print(list)
