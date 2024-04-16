@@ -11,5 +11,4 @@ class MyList(list):
 
     def print_sorted(self):
         list = sorted(self)
-        if list != []:
-            print(list)
+        print(list)
