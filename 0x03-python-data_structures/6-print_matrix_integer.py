@@ -9,3 +9,4 @@ def print_matrix_integer(matrix=[[]]):
             if i.index(m) != len(i) - 1:
                 print("{:d}".format(m), end=" ")
         print("{:d}".format(m))
+
