@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" function """
+
+
 def print_matrix_integer(matrix=[[]]):
     """ handle empty parameter """
     if len(matrix) == 1:
