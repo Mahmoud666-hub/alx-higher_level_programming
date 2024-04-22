@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''start'''
+
+
 def roman_to_int(roman_string):
+    '''start'''
     if roman_string is None or type(roman_string) != str:
         return 0
     h = {"M": 1000, "D": 500, "C": 100, "L": 50,
