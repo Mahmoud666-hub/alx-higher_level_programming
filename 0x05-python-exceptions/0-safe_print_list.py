@@ -2,7 +2,7 @@
 def safe_print_list(my_list=[], x=0):
     try:
         if range(my_list[x]):
-            for f in my_list[:2]:
+            for f in my_list[:x]:
                 print("{:d}".format(f), end="")
             print()
             # print("1")
