@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''empty class'''
+
+
 class Square:
-    def __init__(self):
-        pass
+    '''my first class'''
+    pass
