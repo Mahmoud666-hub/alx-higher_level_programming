@@ -5,4 +5,3 @@
 class Square:
     '''my first class'''
     pass
-
