@@ -4,7 +4,7 @@
 
 
 class Square:
-    '''square'''
+    '''square ijiii'''
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -45,5 +45,3 @@ class Square:
             for i in range(self.__size):
                 print(" " * self.__position[0], end="")
                 print("#" * self.__size)
-mysquare = Square(5, (3, 2))
-mysquare.my_print()
