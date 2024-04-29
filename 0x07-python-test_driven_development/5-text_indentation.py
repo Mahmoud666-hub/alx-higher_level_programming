@@ -11,7 +11,8 @@ def text_indentation(text):
             print("{}".format(i), end="")
             print("\n" * 2, end="")
         else:
-            print("{}".format(i), end="")
+            if not i == " ":
+                print("{}".format(i), end="")
 
 
 if __name__ == "__main__":
