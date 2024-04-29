@@ -27,3 +27,6 @@ test normal:
 
 >>> text_indentation("hello omar")
 hello omar
+
+>>> text_indentation("hello omar  ")
+hello omar  
