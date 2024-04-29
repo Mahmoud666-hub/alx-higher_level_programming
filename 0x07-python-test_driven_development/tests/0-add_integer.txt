@@ -13,7 +13,7 @@ test 1 arg:
 99
 
 test a is float:
->>> add_integer(100.3, -2)
+>>> add_integer(100, -2)
 98
 
 test a arg not int or float:
