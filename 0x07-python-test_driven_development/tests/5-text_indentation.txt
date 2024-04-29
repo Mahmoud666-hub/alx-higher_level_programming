@@ -30,3 +30,5 @@ hello omar
 
 >>> text_indentation("cder vgt   ")
 cder vgt   
+
+>>>
