@@ -1,0 +1,29 @@
+''' 0-adding_integer'''
+usage:
+
+import module:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+test basic:
+>>> add_integer(1, 2)
+3
+
+test 1 arg:
+>>> add_integer(1)
+99
+
+test a is float:
+>>> add_integer(100.3, -2)
+98
+
+test a arg not int or float:
+>>> add_integer("school", 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+test b arg not int or float:
+>>> add_integer(2, "school")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
