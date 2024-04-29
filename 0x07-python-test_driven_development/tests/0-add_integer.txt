@@ -27,3 +27,9 @@ test b arg not int or float:
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+test no arg:
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
