@@ -36,4 +36,9 @@ Traceback (most recent call last):
     ...
 TypeError: text must be a string
 
->>> text_indentation("")
+>>> text_indentation("This is a sample text. It contains\n some punctuations:")
+This is a sample text.
+<BLANKLINE>
+It contains
+some punctuations:
+<BLANKLINE>
