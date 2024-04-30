@@ -4,14 +4,18 @@
 
 def text_indentation(text):
     '''print'''
+    a = 0
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     for i in text:
+        a += 1
         if i in [".", "?", ":"]:
             print("{}".format(i), end="")
             print("\n" * 2, end="")
         else:
-            if not i == " ":
+            if text[a - 2] in [".", "?", ":"]:
+                continue
+            else:
                 print("{}".format(i), end="")
 
 
