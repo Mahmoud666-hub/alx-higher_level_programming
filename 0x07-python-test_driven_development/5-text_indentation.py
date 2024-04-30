@@ -13,7 +13,7 @@ def text_indentation(text):
             print("{}".format(i), end="")
             print("\n" * 2, end="")
         else:
-            if text[a - 2] in [".", "?", ":"]:
+            if (text[a - 2] in [".", "?", ":"]) and i == ' ':
                 continue
             else:
                 print("{}".format(i), end="")
