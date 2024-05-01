@@ -45,7 +45,7 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
-        h = self.print_symbol * self.__width
+        h = str(self.print_symbol) * self.__width
         n = ""
         if self.__height == 0 or self.__width == 0:
             return n
