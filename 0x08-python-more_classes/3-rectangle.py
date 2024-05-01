@@ -43,6 +43,8 @@ class Rectangle:
     def __str__(self):
         h = "#" * self.__width
         n = ""
+        if self.__height == 0 or self.__width == 0:
+            return n
         for i in range(self.__height):
             if i < (self.__height - 1):
                 m = h + "\n"
