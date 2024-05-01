@@ -2,11 +2,6 @@
 '''rectangle'''
 
 
-from typing import Any
-
-from requests import delete
-
-
 class Rectangle:
     '''new class'''
     def __init__(self, width=0, height=0):
