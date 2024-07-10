@@ -6,4 +6,6 @@
 
 def is_same_class(obj, a_class):
     """function"""
-    return isinstance(obj, a_class)
+    if a_class != object:
+        return isinstance(obj, a_class)
+    return False
