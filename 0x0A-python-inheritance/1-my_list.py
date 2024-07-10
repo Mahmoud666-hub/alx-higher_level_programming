@@ -4,8 +4,8 @@
 
 class MyList(list):
     """ initiation """
-    def __init__(self):
-        return super().__init__()
+    # def __init__(self):
+    #     return super().__init__()
 
     """ print sorted """
 
