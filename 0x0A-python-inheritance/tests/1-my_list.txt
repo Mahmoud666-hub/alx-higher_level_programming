@@ -21,3 +21,22 @@ case 1 : main case
 [1, 4, 2, 3, 5]
 >>>
 ----------------------------------------
+case 2 : Empty List Case
+
+
+>>> a = []
+>>> my_list = MyList(a)
+>>> my_list.print_sorted()
+[]
+>>>
+--------------------------------
+case 3 : List of Negative numbers
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(-10)
+>>> my_list.append(5)
+>>> my_list.append(2)
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[-10, -1, 1, 2, 5]
