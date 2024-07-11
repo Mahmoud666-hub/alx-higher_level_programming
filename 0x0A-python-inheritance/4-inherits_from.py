@@ -4,6 +4,4 @@
 
 def inherits_from(obj, a_class):
     """lll"""
-    return isinstance(obj, a_class)
-
-# print(issubclass(type(True), object))
+    return isinstance(obj, a_class) and type(obj) is not a_class
