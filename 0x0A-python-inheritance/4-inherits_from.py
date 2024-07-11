@@ -4,6 +4,6 @@
 
 def inherits_from(obj, a_class):
     """lll"""
-    return issubclass(type(obj), a_class)
+    return issubclass(type(obj), a_class) or type(obj) is a_class
 
 # print(issubclass(type(True), object))
