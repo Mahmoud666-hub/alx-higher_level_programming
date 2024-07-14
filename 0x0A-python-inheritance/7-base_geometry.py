@@ -19,4 +19,4 @@ if __name__ == "__main__":
     doctest.testfile("tests/7-base_geometry.txt")
 
 # bg = BaseGeometry()
-# bg.integer_validator("age", {3, 4})
+# bg.area()
