@@ -1,32 +1,37 @@
-# #!/usr/bin/python3
-# """
-# 1-mylist module
-# """
+#!/usr/bin/python3
+"""
+Module for class that inherits from BaseGeometry
+"""
+
+"""Parent class"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-# BaseGeometry = __import__('7-base_geometry').BaseGeometry
+class Rectangle(BaseGeometry):
+    """Basic class that inherits from BaseGeometry"""
 
+    def __init__(self, width, height):
+        """Initialize a new Rectangle.
 
-# class Rectangle(BaseGeometry):
-#     """
-#     rectangle
-#     """
-#     def __init__(self, width, height):
-#         """
-#         __init__
-#         """
-#         self.__width = super().integer_validator("width", width)
-#         self.__height = super().integer_validator("height", height)
+        Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
-#     def __str__(self):
-#         """
-#         str method
-#         """
-#         return f"[Rectangle] {self.__width}/{self.__height}"
+    def area(self):
+        """Return the area of the rectangle."""
+        return self.__width * self.__height
 
-#     def area(self):
-#         """"
-#         area
-#         """
-#         return int(self.__height) * int(self.__width)
-    
+    def __str__(self):
+        """Return the print() and str() representation of a Rectangle."""
+        res = "[" + type(self).__name__ + "]" + " "
+        res += str(self.__width) + "/"
+        res += str(self.__height)
+
+        return res
+r = Rectangle(4, 5)
+print(r)
