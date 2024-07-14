@@ -20,3 +20,39 @@ test zero:
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
+
+test none:
+>>> bg.integer_validator("jkl", None)
+Traceback (most recent call last):
+...
+TypeError: jkl must be an integer
+
+test set:
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+test boolean:
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+test list:
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+test tuple:
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+test str:
+>>> bg.integer_validator("age", "4")
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
