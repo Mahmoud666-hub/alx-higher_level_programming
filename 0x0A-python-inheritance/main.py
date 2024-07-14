@@ -1,22 +1,32 @@
-#!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+# #!/usr/bin/python3
+# """
+# 1-mylist module
+# """
 
-bg = BaseGeometry()
 
-bg.integer_validator("my_int", 12)
-bg.integer_validator("width", 89)
+# BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-try:
-    bg.integer_validator("name", "John")
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
 
-try:
-    bg.integer_validator("age", 0)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+# class Rectangle(BaseGeometry):
+#     """
+#     rectangle
+#     """
+#     def __init__(self, width, height):
+#         """
+#         __init__
+#         """
+#         self.__width = super().integer_validator("width", width)
+#         self.__height = super().integer_validator("height", height)
 
-try:
-    bg.integer_validator("distance", -4)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+#     def __str__(self):
+#         """
+#         str method
+#         """
+#         return f"[Rectangle] {self.__width}/{self.__height}"
+
+#     def area(self):
+#         """"
+#         area
+#         """
+#         return int(self.__height) * int(self.__width)
+    
