@@ -5,4 +5,5 @@
 def append_write(filename="", text=""):
     """fun"""
     with open(filename, "a", encoding="UTF8") as f:
-        f.write(text)
+        num = f.write(text)
+    return num
