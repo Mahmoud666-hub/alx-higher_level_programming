@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-read_file = __import__('0-read_file').read_file
+to_json_string = __import__('3-to_json_string').to_json_string
 
-read_file("my.txt")
+my_list = [1, 2, 3]
+s_my_list = to_json_string(my_list)
+print(s_my_list)
+print(type(s_my_list))
