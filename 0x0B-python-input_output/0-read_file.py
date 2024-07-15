@@ -4,7 +4,8 @@
 
 def read_file(filename=""):
     """doc"""
-    with open(filename, "r") as f:
+    with open(filename, "rb") as f:
         data = f.read()
 
-    print(data)
+    if data !="":
+        print(data)
