@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-to_json_string = __import__('3-to_json_string').to_json_string
+from_json_string = __import__('4-from_json_string').from_json_string
 
-my_list = [1, 2, 3]
-s_my_list = to_json_string(my_list)
-print(s_my_list)
-print(type(s_my_list))
+s_my_list = "[1, 2, 3]"
+my_list = from_json_string(s_my_list)
+print(my_list)
+print(type(my_list))
