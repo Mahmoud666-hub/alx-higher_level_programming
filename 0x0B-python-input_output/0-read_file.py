@@ -5,8 +5,7 @@
 def read_file(filename=""):
     """doc"""
     with open(filename, "r") as f:
-        for line in f:
-            data = f.read(-1)
+        data = f.read(-1)
 
     if data != "":
         print(data)
