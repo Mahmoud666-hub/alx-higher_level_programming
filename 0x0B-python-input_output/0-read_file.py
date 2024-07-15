@@ -4,7 +4,7 @@
 
 def read_file(filename=""):
     """doc"""
-    with open(filename, "r", encoding='utf-8') as f:
+    with open(filename, "r") as f:
         data = f.read()
 
     print(data, end="")
