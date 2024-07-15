@@ -1,9 +1,15 @@
 #!/usr/bin/python3
 """json"""
+from genericpath import isfile
 import json
 import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = \
+    __import__('6-load_from_json_file').load_from_json_file
 
-
-with open("add_item.json", "a") as f:
-    save_to_json_file(sys.argv[1:], "add_item.json")
+if isfile("add_item.json"):
+    ls = load_from_json_file("add_item.json")
+else:
+    ls = []
+ls.extend(sys.argv[1:])
+save_to_json_file(ls, "add_item.json")
