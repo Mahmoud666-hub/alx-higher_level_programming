@@ -19,3 +19,5 @@ class Student:
             return r
         else:
             return self.__dict__
+# s= Student("da", "as", 32)
+# print(s.to_json())
