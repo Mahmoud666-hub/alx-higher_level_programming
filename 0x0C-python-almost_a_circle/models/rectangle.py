@@ -58,15 +58,15 @@ class Rectangle(Base):
         return self.__y
 
     @width.setter
-    def width(self, width):
+    def width(self, Width):
         """
-        retangle height
+        widht setter
         """
-        if type(width) is not int:
+        if type(Width) is not int:
             raise TypeError("width must be an integer")
-        elif width <= 0:
+        if Width <= 0:
             raise ValueError("width must be > 0")
-        self.__width = width
+        self.__width = Width
 
     @height.setter
     def height(self, val):
