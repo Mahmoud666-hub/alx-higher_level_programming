@@ -62,7 +62,7 @@ class Rectangle(Base):
         """
         retangle height
         """
-        if type(val) is not int:
+        if not isinstance(val, int):
             raise TypeError("width must be an integer")
         elif val <= 0:
             raise ValueError("width must be > 0")
