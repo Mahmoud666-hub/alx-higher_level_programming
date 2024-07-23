@@ -32,7 +32,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-        retangle height
+        width getter
         """
         return self.__width
 
