@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # from base import Base
+"""module"""
+
+
 Base = __import__('base').Base
 """module"""
 
@@ -8,11 +11,13 @@ class Rectangle(Base):
     """new class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """init"""
+
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-        (super).__init__(id)
+        super().__init__(id)
 
     @property
     def width(self):
