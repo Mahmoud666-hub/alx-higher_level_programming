@@ -3,26 +3,23 @@
 rectangle module
 """
 
-
 from models.base import Base
-
 
 class Rectangle(Base):
     """
     Rectangle class:
     inherits from Base
-    attr:
-    width of rect
-    height of rect
-    x
-    y
+    Attributes:
+        width: width of the rectangle
+        height: height of the rectangle
+        x: x coordinate
+        y: y coordinate
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         __init__ constructor
         """
-
         self.width = width
         self.height = height
         self.x = x
@@ -39,65 +36,64 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-        retangle height
+        height getter
         """
         return self.__height
 
     @property
     def x(self):
         """
-        retangle height
+        x getter
         """
         return self.__x
 
     @property
     def y(self):
         """
-        retangle height
+        y getter
         """
         return self.__y
 
     @width.setter
-    def width(self, Width):
+    def width(self, value):
         """
-        widht setter
+        width setter
         """
-        if type(Width) is not int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
-        if Width <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
-        else:
-            self.__width = Width
+        self.__width = value
 
     @height.setter
-    def height(self, val):
+    def height(self, value):
         """
-        retangle height
+        height setter
         """
-        if type(val) is not int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
-        elif val <= 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
-        self.__height = val
+        self.__height = value
 
     @x.setter
-    def x(self, val):
+    def x(self, value):
         """
-        retangle height
+        x setter
         """
-        if type(val) is not int:
+        if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif val <= 0:
-            raise ValueError("x must be > 0")
-        self.__x = val
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
 
     @y.setter
-    def y(self, val):
+    def y(self, value):
         """
-        retangle height
+        y setter
         """
-        if type(val) is not int:
+        if type(value) is not int:
             raise TypeError("y must be an integer")
-        elif val <= 0:
-            raise ValueError("y must be > 0")
-        self.__y = val
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
