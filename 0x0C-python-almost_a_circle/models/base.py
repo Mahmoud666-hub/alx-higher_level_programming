@@ -1,14 +1,19 @@
 #!/usr/bin/python3
-"""new"""
+"""
+base modules for all other modules
+"""
 
 
 class Base:
-    """class"""
+    """
+    base class for all other classes
+    """
+
     __nb_objects = 0
     """attr class"""
     def __init__(self, id=None):
         """
-        cons
+        __init__ constructor
         """
 
         if id is not None:
