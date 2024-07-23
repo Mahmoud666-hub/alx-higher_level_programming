@@ -1,17 +1,21 @@
 #!/usr/bin/python3
-# from base import Base
 """
 rectangle module
 """
 
 
-Base = __import__('base').Base
-"""module"""
+from models.base import Base
 
 
 class Rectangle(Base):
     """
-    rectangle class
+    Rectangle class:
+    inherits from Base
+    attr:
+    width of rect
+    height of rect
+    x
+    y
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
