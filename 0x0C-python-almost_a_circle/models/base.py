@@ -7,7 +7,10 @@ class Base:
     __nb_objects = 0
     """attr class"""
     def __init__(self, id=None):
-        """cons"""
+        """
+        cons
+        """
+
         if id is not None:
             self.id = id
         else:
