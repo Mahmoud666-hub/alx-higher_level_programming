@@ -27,32 +27,56 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """
+        retangle height
+        """
         return self.__width
 
     @property
     def height(self):
+        """
+        retangle height
+        """
         return self.__height
 
     @property
     def x(self):
+        """
+        retangle height
+        """
         return self.__x
 
     @property
     def y(self):
+        """
+        retangle height
+        """
         return self.__y
 
     @width.setter
     def width(self, val):
+        """
+        retangle height
+        """
         self.__width = val
 
     @height.setter
     def height(self, val):
+        """
+        retangle height
+        """
         self.__height = val
 
     @x.setter
     def x(self, x):
+        """
+        retangle height
+        """
         self.__x = x
 
     @y.setter
     def y(self, val):
+        """
+        retangle height
+        """
         self.__y = val
